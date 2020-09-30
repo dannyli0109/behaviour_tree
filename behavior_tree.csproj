@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Raylib-cs\**" />
+    <EmbeddedResource Remove="Raylib-cs\**" />
+    <None Remove="Raylib-cs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="Raylib-cs\Raylib-cs.csproj" />
+  </ItemGroup>
+
+</Project>
